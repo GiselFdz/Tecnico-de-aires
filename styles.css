@@ -1,0 +1,420 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo para el ícono flotante de WhatsApp */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el fondo */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  background-color: #25d366; /* Color verde característico de WhatsApp */
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cambiar tamaño al pasar el ratón sobre el ícono */
+.whatsapp-icon:hover {
+  background-color: #128c7e; /* Color más oscuro de WhatsApp al pasar el ratón */
+  transform: scale(1.1); /* Aumenta el tamaño */
+}
+
+/* Estilo para el ícono */
+.whatsapp-icon i {
+  margin: 0;
+  font-size: 30px;
+}
+
+/*estilos navbar*/
+
+.navbar {
+  background-color: #5375d1; /* Azul oscuro */
+  padding: 0 15px;
+}
+
+.navbar a {
+  color: #ffffff; /* Blanco */
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #ffcc00; /* Cambia el color al pasar el ratón */
+  transition: color 0.3s ease;
+}
+
+.text-logo {
+  color: #53cdd1fd;
+  font-size: 22px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler {
+  background-color: #53cdd1fd; /* Cambia el color de fondo aquí */
+  border: none; /* Opcional: Si no deseas un borde */
+  margin-left: 20px;
+  
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffffd2; /* Cambia el color del icono dentro del botón */
+}
+
+/*estilos carrusel*/
+.carousel-item {
+  min-height: 400px;
+}
+
+.carousel-caption {
+  padding: 20px;
+  bottom: 100px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: 60px auto;
+  font-size: 20px;
+  color: #fff; /* Texto secundario en gris claro */
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(15, 15, 15, 0.616);
+  z-index: 1;
+}
+
+.carousel-inner .carousel-item img {
+  object-fit: fill; /* Ajusta las imágenes al contenedor sin deformarlas */
+  height: 700px; /* Puedes ajustar esta altura según lo que necesites */
+}
+
+.presentacion {
+  padding: 20px 0;
+}
+
+.presentacion p {
+  padding-top: 30px;
+}
+
+.services {
+  padding: 20px 0px;
+}
+
+/*estilos acerca de */
+
+.acerca-de {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.acerca {
+  letter-spacing: 1.2px;
+}
+
+.img-fluid {
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+/* Estilos para la sección servicios*/
+.servicios {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.titulo-servicios {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 80px;
+}
+
+/* Estilos para cada tarjeta */
+.tarjeta {
+  width: 300px; /* Tamaño fijo para pantallas grandes */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Estilos de la imagen */
+.imagen-tarjeta {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Estilos del cuerpo de la tarjeta */
+.cuerpo-tarjeta {
+  padding: 20px;
+}
+
+/* Título y descripción dentro de la tarjeta */
+.titulo-tarjeta {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.descripcion-tarjeta {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos del enlace */
+.link-tarjeta {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center; /* Centra el texto dentro del enlace */
+  width: 100%; /* Hace que el enlace ocupe todo el ancho de su contenedor */
+  border-bottom: 2px solid transparent; /* Borde inicial */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+}
+
+.link-tarjeta:hover {
+  color: #0056b3;
+  border-color: #0056b3; /* Borde azul en hover */
+}
+
+/* Efecto hover para las tarjetas */
+.tarjeta:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilo para la sección de contacto */
+
+.contact {
+  padding: 40px 20px;
+}
+
+/* Cabecera de la sección de contacto */
+.secction-header h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.secction-header p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Formulario de contacto */
+
+form {
+  width: 100%;
+  max-width: 500px; /* Establecemos un ancho máximo para el formulario */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea.form-control {
+  height: 150px; /* Tamaño del textarea */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/*Estilos footer*/
+
+footer {
+  background-color: #5375d1; /* Azul oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0; /* Espaciado */
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Centra los iconos de las redes sociales */
+}
+
+footer .social-icon {
+  margin: 0 15px; /* Espaciado entre los iconos */
+  color: #fff; /* Color blanco para los iconos */
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el color y el tamaño */
+}
+
+/* Hover para los iconos sociales */
+footer .social-icon:hover {
+  color: #1da1f2; /* Azul de Twitter */
+  transform: scale(1.1); /* Agrandar el icono al pasar el ratón */
+}
+
+/* Hover personalizado para otras redes sociales */
+footer .social-icon:hover.facebook {
+  color: #3b5998; /* Azul de Facebook */
+}
+
+footer .social-icon:hover.instagram {
+  color: #e1306c; /* Rosa de Instagram */
+}
+
+footer .social-icon:hover.linkedin {
+  color: #0077b5; /* Azul de LinkedIn */
+}
+
+footer .social-icon:hover.pinterest {
+  color: #bd081c; /* Rojo de Pinterest */
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 10px; /* Espaciado entre el texto y los iconos */
+}
+/* Diseño responsivo */
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-right: 140px; /* Añadimos margen al logo para separarlo del toggle */
+  }
+
+  .navbar-toggler {
+    margin-left: 30px;
+
+    display: block;
+  }
+
+  /* Asegura que el logo no se vea afectado por el posicionamiento */
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carousel-item {
+    min-height: 250px; /* Ajusta la altura mínima de las imágenes */
+  }
+
+  .carousel-item img {
+    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+  }
+
+  .carousel-caption {
+    bottom: 20px; /* Mueve las leyendas hacia arriba */
+  }
+
+  .carousel-caption h5 {
+    font-size: 24px; /* Tamaño más pequeño para dispositivos móviles */
+  }
+
+  .carousel-caption p {
+    font-size: 14px; /* Ajusta el tamaño de la fuente del párrafo */
+    width: 90%; /* Asegura que el texto no se salga del contenedor */
+  }
+
+  /* Mejorar la visibilidad de los controles en móviles */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px; /* Hace que los botones sean más pequeños */
+    height: 40px; /* Ajusta el tamaño */
+  }
+
+  .contenedor-tarjetas {
+    padding: 20px; /* Reducir el padding en pantallas pequeñas */
+    gap: 20px; /* Reducir el espaciado entre tarjetas */
+  }
+
+  .tarjeta {
+    width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas pequeñas */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+  }
+
+  .imagen-tarjeta {
+    height: 200px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+  }
+
+  .titulo-tarjeta {
+    font-size: 1.25rem; /* Reducir el tamaño del título */
+  }
+
+  .descripcion-tarjeta {
+    font-size: 0.9rem; /* Reducir el tamaño de la descripción */
+  }
+
+  .link-tarjeta {
+    font-size: 0.9rem; /* Reducir el tamaño del enlace */
+  }
+
+  footer .container {
+    text-align: center;
+  }
+
+  footer .social-icons {
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que los iconos se ajusten en pantallas pequeñas */
+  }
+
+  footer .social-icon {
+    margin: 10px; /* Ajusta el margen en pantallas pequeñas */
+  }
+
+  .col-lg-5,
+  .col-lg-6 {
+    width: 100%; /* Las columnas ocupan todo el ancho en dispositivos móviles */
+  }
+
+  form {
+    margin: 0 auto;
+  }
+}
